@@ -35,10 +35,10 @@ var PioneerSquare = {
     el.innerHTML = "<h2>"+ this.name +"</h2>"
     el.innerHTML += "<ul>"
     for (var i = 0; i < this.storeHours.length; i++) {
-      el.innerHTML += "<li>" + this.storeHours[i] + ": " + this.storeCookies[i] + "</li>"
+      el.innerHTML += "<li>" + this.storeHours[i] + ": " + this.storeCookies[i] + " cookies</li>"
       }
     el.innerHTML += "</ul>"
-    el.innerHTML += "<p>Total: " + this.totalCookies() + "</p>";
+    el.innerHTML += "<p>Total: " + this.totalCookies() + " cookies</p>";
   },
 
 
@@ -74,10 +74,10 @@ var PortlandAirport = {
     el.innerHTML = "<h2>" + this.name + "</h2>";
     el.innerHTML += "<ul>";
     for (var i = 0; i < this.storeHours.length; i++) {
-      el.innerHTML += "<li>" + this.storeHours[i] + ": " + this.storeCookies[i] + "</li>"
+      el.innerHTML += "<li>" + this.storeHours[i] + ": " + this.storeCookies[i] + " cookies</li>"
       }
   el.innerHTML += "</ul>"
-  el.innerHTML += "<p>Total: " + this.totalCookies() + "</p>";
+  el.innerHTML += "<p>Total: " + this.totalCookies() + " cookies</p>";
   },
   totalCookies: function (){
  var Total = 0;
@@ -113,10 +113,10 @@ var WashingtonSquare = {
     el.innerHTML = "<h2>"+ this.name +"</h2>"
     el.innerHTML += "<ul>"
     for (var i = 0; i < this.storeHours.length; i++) {
-      el.innerHTML += "<li>" + this.storeHours[i] + ": " + this.storeCookies[i] + "</li>"
+      el.innerHTML += "<li>" + this.storeHours[i] + ": " + this.storeCookies[i] + " cookies</li>"
       }
     el.innerHTML += "</ul>"
-      el.innerHTML += "<p>Total: " + this.totalCookies() + "</p>";
+      el.innerHTML += "<p>Total: " + this.totalCookies() + " cookies</p>";
   },
 
   totalCookies: function (){
@@ -153,10 +153,10 @@ var Sellwood = {
     el.innerHTML = "<h2>"+ this.name +"</h2>"
     el.innerHTML += "<ul>"
     for (var i = 0; i < this.storeHours.length; i++) {
-      el.innerHTML += "<li>" + this.storeHours[i] + ": " + this.storeCookies[i] + "</li>"
+      el.innerHTML += "<li>" + this.storeHours[i] + ": " + this.storeCookies[i] + " cookies</li>"
       }
     el.innerHTML += "</ul>"
-    el.innerHTML += "<p>Total: " + this.totalCookies() + "</p>";
+    el.innerHTML += "<p>Total: " + this.totalCookies() + " cookies</p>";
   },
 
   totalCookies: function (){
@@ -193,10 +193,10 @@ var PearlDistrict = {
     el.innerHTML = "<h2>"+ this.name +"</h2>"
     el.innerHTML += "<ul>"
     for (var i = 0; i < this.storeHours.length; i++) {
-      el.innerHTML += "<li>" + this.storeHours[i] + ": " + this.storeCookies[i] + "</li>"
+      el.innerHTML += "<li>" + this.storeHours[i] + ": " + this.storeCookies[i] + " cookies</li>"
       }
     el.innerHTML += "</ul>"
-    el.innerHTML += "<p>Total: " + this.totalCookies() + "</p>";
+    el.innerHTML += "<p>Total: " + this.totalCookies() + " cookies</p>";
 
   },
 

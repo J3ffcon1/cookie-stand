@@ -210,7 +210,7 @@ var PearlDistrict = {
 }
 }
 
-function runCookieStand(){
+//function runCookieStand(){
 PioneerSquare.numberCookies();
  PioneerSquare.displayCookies();
 PortlandAirport.numberCookies();
@@ -221,4 +221,4 @@ Sellwood.numberCookies();
  Sellwood.displayCookies();
  PearlDistrict.numberCookies();
  PearlDistrict.displayCookies();
- };
+ //};

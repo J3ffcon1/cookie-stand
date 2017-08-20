@@ -8,6 +8,7 @@ background-color: hsla(38%, 68%, 81%, 1)
 }
 
 nav li {
+  text-decoration: none;
   display: inline;
   padding: 5px, 6px;
   font-family: 'Exo', fantasy;
@@ -16,16 +17,23 @@ nav li {
   color: white;
 }
 
-ul {
-  list-style: none;
-
-}
-
 nav li:hover {
   /*background-color: #C3B299;*/
   text-decoration: underline;
   text-decoration-color: #d83704;
 }
+
+ul {
+  list-style: none;
+
+}
+
+.index-nav {
+  text-decoration: none;
+  color: red;
+}
+
+
 li::before {
   content: ">";
   color: #d83704;
@@ -56,8 +64,10 @@ h2 {
   font-size: 36px;
 
 }
+
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 #landing {
@@ -72,7 +82,7 @@ a {
 
 
 }
-#landing:hover {
+ #landing:hover {
   text-decoration: underline;
   text-decoration-color: #d83704;
   font-family: 'Exo', sans-serif;
@@ -85,4 +95,8 @@ a {
   text-align: center;
   margin-top: -100px;
 
+}
+
+footer {
+color: white;
 }

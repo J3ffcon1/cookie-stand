@@ -29,7 +29,7 @@ var PioneerSquare = {
 
 
  },
-
+//put more d
   displayCookies: function(){
     var el = document.getElementById('display-pioneer');
     el.innerHTML = "<h2>"+ this.name +"</h2>"

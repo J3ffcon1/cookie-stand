@@ -2,8 +2,9 @@
 
 
 header {
-background-color: hsla(38%, 68%, 81%, 1)
-
+/*background-color: hsla(38%, 68%, 81%, 1)
+*/
+background-color: #212833;
 }
 
 nav li {

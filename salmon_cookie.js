@@ -48,7 +48,7 @@ function buildCookiesTable() {
 
     console.log(branches[index]);
 
-    for (var timeindex = 0; timeindex < branches[index].storeHours.length +1 ; timeindex++) {
+    for (var timeindex = 0; timeindex < branches[index].storeHours.length + 1 ; timeindex++) {
       branches[index].randomCookies();
       tableBody.appendChild(tr);
       var td = document.createElement("td");

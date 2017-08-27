@@ -20,24 +20,30 @@ var CookieStore = function (name, minCustomerHr, maxCustomerHr, avgCustomerHr) {
 
 }
 
+// var branches = [];
+//
+// var pioneer = new CookieStore("Pioneer Square", 17, 88, 5.2);
+// var airport = new CookieStore("Portland airport", 6, 24, 1.2);
+// var washington = new CookieStore("Washington Square", 11, 38, 1.9);
+// var sellwood = new CookieStore("Sellwood", 20, 48, 3.3);
+// var pearl = new CookieStore("Pearl District", 3, 24, 2.6);
+// var branches = [];
 
-var pioneer = new CookieStore("Pioneer Square", 17, 88, 5.2);
-var airport = new CookieStore("Portland airport", 6, 24, 1.2);
-var washington = new CookieStore("Washington Square", 11, 38, 1.9);
-var sellwood = new CookieStore("Sellwood", 20, 48, 3.3);
-var pearl = new CookieStore("Pearl District", 3, 24, 2.6);
-var branches = [pioneer, airport, washington, sellwood, pearl];
+var branches = [];
+branches.push(new CookieStore("Pioneer Square", 17, 88, 5.2));
+branches.push(new CookieStore("Portland airport", 6, 24, 1.2));
+branches.push(new CookieStore("Washington Square", 11, 38, 1.9));
+branches.push(new CookieStore("Sellwood", 20, 48, 3.3));
+branches.push(new CookieStore("Pearl District", 3, 24, 2.6));
 
-
-console.log(branches);
-console.log(pioneer);
 
 
 
 
 
 function buildCookiesTable() {
-  var tableBody = document.getElementById("table-body");
+var tableBody = document.getElementById("table-body");
+  tableBody.innerHTML = "";
 
   for (var index = 0; index < branches.length; index++) {
     var tr = document.createElement("tr");
@@ -64,6 +70,34 @@ function buildCookiesTable() {
 
        //tableBody.appendChild(roster[index].getcookiesTableRows());
      }
-   }
+
+
+
+
+   };
+
+   function addNewBranch() {
+     var tableBody = document.getElementById("table-body");
+     var form = document.forms['buttonCookieBranch'];
+     var newBranch = form.elements['newCookieBranch'];
+     var minCustomers = form.elements['newMinCustomer'];
+     var maxCustomers = form.elements['newMaxCustomer'];
+     var avgCustomers = form.elements['newAvgCustomer'];
+     var message = "New Store: ";
+
+     message += "\n Name:"+newBranch.value;
+     message += "\n Min:"+minCustomers.value;
+     message += "\n Max:"+maxCustomers.value;
+     message += "\n Avg:"+avgCustomers.value;
+     alert(message);
+
+   newStore = new CookieStore(newBranch.value, parseInt(minCustomers.value), parseInt(maxCustomers.value), parseFloat(avgCustomers.value));
+   branches.push(newStore);
+   newStore.randomNumber();
+   buildCookiesTable();
+};
+
+
+
 
 buildCookiesTable();

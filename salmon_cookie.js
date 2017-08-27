@@ -17,17 +17,7 @@ var CookieStore = function (name, minCustomerHr, maxCustomerHr, avgCustomerHr) {
     this.storeCookies.push(cookieNumber);
     this.total += cookieNumber;
   };
-  // this.numberCookies = function () {
-  //   for (var i = 0; i < this.storeHours.length; i++) {
-  //   }
-  // }
-  // this.totalCookies = function (){
-  //   var Total = 0;
-  //   for (var i = 0; i < this.storeCookies.length; i++) {
-  //     Total += this.storeCookies[i];
-  //      }
-  //      return Total;
-  //
+
 }
 
 
@@ -48,7 +38,7 @@ console.log(pioneer);
 
 function buildCookiesTable() {
   var tableBody = document.getElementById("table-body");
-  
+
   for (var index = 0; index < branches.length; index++) {
     var tr = document.createElement("tr");
     tableBody.appendChild(tr);
@@ -58,7 +48,7 @@ function buildCookiesTable() {
 
     console.log(branches[index]);
 
-    for (var timeindex = 0; timeindex < branches[index].storeHours.length; timeindex++) {
+    for (var timeindex = 0; timeindex < branches[index].storeHours.length +1 ; timeindex++) {
       branches[index].randomCookies();
       tableBody.appendChild(tr);
       var td = document.createElement("td");
@@ -77,16 +67,3 @@ function buildCookiesTable() {
    }
 
 buildCookiesTable();
-  // this.cookiesTableRows = function() {
-  //   var row = document.createElement("tr");
-  //   var nameCell = document.createElement("td");
-  //   nameCell.innerText = this.name;
-  //   row.appendChild(nameCell);
-  //   var phoneCell = document.createElement("td");
-  //   phoneCell.innerText = this.phone;
-  //   row.appendChild(phoneCell);
-  //   var emailCell = document.createElement("td");
-  //   emailCell.innerText = this.email;
-  //   row.appendChild(emailCell);
-  //   return row;
-  // }

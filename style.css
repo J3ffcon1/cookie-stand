@@ -48,6 +48,22 @@ li::before {
 
 }
 
+table {
+  color: #CCCCCC;
+  }
+
+  th, thead {
+    color: #d83704;
+    height: 50%;
+    padding: 5px;
+    border-bottom: 1px solid #CCCCCC;
+    background-color: #CCCCCC;
+  }
+
+
+
+
+
 body {
 
   font-family: 'Exo', Times, sans-serif;

@@ -89,7 +89,7 @@ var tableBody = document.getElementById("table-body");
      message += "\n Min:"+minCustomers.value;
      message += "\n Max:"+maxCustomers.value;
      message += "\n Avg:"+avgCustomers.value;
-     alert(message);
+      
 
    newStore = new CookieStore(newBranch.value, parseInt(minCustomers.value), parseInt(maxCustomers.value), parseFloat(avgCustomers.value));
    branches.push(newStore);

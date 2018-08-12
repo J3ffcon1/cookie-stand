@@ -1,16 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href = "https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel ="stylesheet">
 <link rel="stylesheet" type="text/css" href ="style.css">
 
 </head>
 <body>
+
+    <header>
+      <nav>
+
+        <ul div id = "index-nav">
+          <li>Home</li>
+          <li>Branches</li>
+          <li>Careers</li>
+          <li><a href = "Landing_page.html">Landing Page</a></li>
+        </ul></div>
+      </nav>
+
+
+
+  </header>
+
+  <!-- <section>
   <div id = "display-pioneer"></div>
   <div id = "display-airport"></div>
   <div id = "display-washington"></div>
   <div id = "display-sellwood"></div>
   <div id = "display-pearl"></div>
+</section> -->
+
+<table>
+  <thead>
+    <tr>
+        <th>Cookie Branch</th>
+        <th>10am</th>
+        <th>11am</th>
+        <th>12pm</th>
+        <th>1pm</th>
+        <th>2pm</th>
+        <th>3pm</th>
+        <th>4pm</th>
+        <th>5pm</th>
+        <th>Total</th>
+    </tr>
+  </thead>
+  <tbody id = 'table-body'>
+  </tbody>
+</table>
+
+<br>
+<br>
+
+<form name = "buttonCookieBranch">
+  <label>Add New Branch</label>
+  <input name = "newCookieBranch">
+  <label>Max Customers</label>
+  <input name = "newMaxCustomer">
+  <label>Min Customers</label>
+  <input name = "newMinCustomer">
+  <label>Avg Customers</label>
+  <input name = "newAvgCustomer">
+
+
+    <br>
+  <input type = "button" value = "Add New Branch" onclick = 'addNewBranch()'>
+</form>
+
+
+  <footer>
+    <p>&copy; Cookie-Stand INC</p>
+  </footer>
 
 <script src = "salmon_cookie.js" type = "text/javascript"></script>
 </body>

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700');
+
+body {
+
+  font-family: 'Raleway', Times, sans-serif;
+  background-color: #ccccff;
+}
+
+h2, li {
+  font-family: Times;
+  color: hsla(236%, 18%, 19%, 1);
+
+}
+#name {
+  color: white;
+
+}
+/* Coolors Exported Palette - coolors.co/272838-2274a5-efd6ac-ff6666-432534 */
+
+/* HSL */
+$color1: hsla(236%, 18%, 19%, 1);
+$color2: hsla(202%, 66%, 39%, 1);
+$color3: hsla(38%, 68%, 81%, 1);
+$color4: hsla(0%, 100%, 70%, 1);
+$color5: hsla(330%, 29%, 20%, 1);
+
+/* RGB */
+$color1: rgba(39, 40, 56, 1);
+$color2: rgba(34, 116, 165, 1);
+$color3: rgba(239, 214, 172, 1);
+$color4: rgba(255, 102, 102, 1);
+$color5: rgba(67, 37, 52, 1);
